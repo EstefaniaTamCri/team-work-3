@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Titillium+Web:wght@900&display=swap");
-
 /* Reset */
 * {
   margin: 0;
@@ -7,3 +6,139 @@
   border: 0;
   box-sizing: border-box;
 }
+
+.team {
+  width: 100%;
+}
+.team_container_text {
+  padding: 5px 1%;
+  margin: 2.8rem 1.1rem;
+  font-size: 1.8em;
+  font-family: "Poppins";
+  font-weight: 300;
+}
+@media (min-width: 992px) {
+  .team_container_text {
+    font-size: 1.1em;
+    margin: 1.6rem 2rem 1rem 0.5rem;
+  }
+}
+@media (min-width: 1400px) {
+  .team_container_text {
+    margin: 1.6rem 2rem 1rem 0.5rem;
+    font-size: 1.3rem;
+  }
+}
+.team_container_text-title h2 {
+  font-family: "Titillium Web";
+  font-size: 5.3rem;
+  font-weight: 900;
+  padding: 0;
+  margin: 0;
+  line-height: 5rem;
+}
+@media (min-width: 992px) {
+  .team_container_text-title h2 {
+    font-size: 3.3rem;
+    line-height: 3.5rem;
+  }
+}
+@media (min-width: 1400px) {
+  .team_container_text-title h2 {
+    font-size: 3.7rem;
+    line-height: 3.5rem;
+  }
+}
+.team_container_text-title h2.black {
+  color: black;
+}
+.team_container_text-title h2.yellow {
+  color: rgb(255, 195, 17);
+  margin-bottom: 2rem;
+}
+@media (min-width: 992px) {
+  .team_container_text-title h2.yellow {
+    margin-bottom: 1rem;
+  }
+}
+@media (min-width: 1400px) {
+  .team_container_text-title h2.yellow {
+    margin-bottom: 1rem;
+  }
+}
+.team_container_players {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 1.1em;
+}
+@media (min-width: 992px) {
+  .team_container_players {
+    margin: 0 2.4rem;
+  }
+}
+@media (min-width: 1400px) {
+  .team_container_players {
+    margin: 0 2.4rem;
+  }
+}
+.team_container_players_cards {
+  width: 100%;
+  padding: 10px 1%;
+  margin-bottom: 4em;
+  position: relative;
+  overflow: hidden;
+}
+@media (min-width: 992px) {
+  .team_container_players_cards {
+    width: 32%;
+  }
+}
+@media (min-width: 1400px) {
+  .team_container_players_cards {
+    width: 33%;
+    padding: 0 1%;
+  }
+}
+.team_container_players_cards img {
+  box-shadow: 0px 10px 10px 0px #d4d4da;
+  width: 100%;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.team_container_players_cards button {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  width: 48%;
+  height: 10%;
+  font-size: 2rem;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: rgb(40, 40, 40);
+  font-family: "Titillium Web";
+  cursor: pointer;
+  background-color: rgb(255, 195, 17);
+}
+@media (min-width: 992px) {
+  .team_container_players_cards button {
+    top: 65%;
+    left: 50%;
+    width: 65%;
+    height: 17%;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}
+@media (min-width: 1400px) {
+  .team_container_players_cards button {
+    left: 50%;
+    top: 77.5%;
+    width: 66%;
+    height: 9%;
+    font-size: 1.7rem;
+    text-align: center;
+  }
+}/*# sourceMappingURL=style.css.map */
