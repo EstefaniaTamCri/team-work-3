@@ -12,12 +12,12 @@
   &_container {
     &_text {
       padding: 5px 1%;
-      margin: 2.8rem 1.1rem;
-      font-size: 1.8em;
+      margin: 1rem 1.1rem;
+      font-size: 0.9em;
       font-family: "Poppins";
       font-weight: 300;
-      @media (min-width: 992px) {
-        font-size: 1.1em;
+      @media (min-width: 768px) {
+        font-size: 0.9em;
         margin: 1.6rem 2rem 1rem 0.5rem;
       }
       @media (min-width: 1400px) {
@@ -27,12 +27,12 @@
       &-title {
         & h2 {
           font-family: "Titillium Web";
-          font-size: 5.3rem;
+          font-size: 2.6rem;
           font-weight: 900;
           padding: 0;
           margin: 0;
-          line-height: 5rem;
-          @media (min-width: 992px) {
+          line-height: 2.8rem;
+          @media (min-width: 768px) {
             font-size: 3.3rem;
             line-height: 3.5rem;
           }
@@ -45,8 +45,8 @@
           }
           &.yellow {
             color: rgb(255, 195, 17);
-            margin-bottom: 2rem;
-            @media (min-width: 992px) {
+            margin-bottom: 0.8rem;
+            @media (min-width: 768px) {
               margin-bottom: 1rem;
             }
             @media (min-width: 1400px) {
@@ -61,7 +61,7 @@
       flex-wrap: wrap;
       justify-content: space-between;
       margin: 1.1em;
-      @media (min-width: 992px) {
+      @media (min-width: 768px) {
         margin: 0 2.4rem;
       }
       @media (min-width: 1400px) {
@@ -69,22 +69,47 @@
       }
       &_cards {
         width: 100%;
-        padding: 10px 1%;
         margin-bottom: 4em;
         position: relative;
         overflow: hidden;
-        @media (min-width: 992px) {
+        @media (min-width: 768px) {
           width: 32%;
         }
         @media (min-width: 1400px) {
-          width: 33%;
-          padding: 0 1%;
+          width: 31%;
+          // padding: 0 1%;
+          // position: relative;
+          // display: inline-block;
         }
-        & img {
-          box-shadow: 0px 10px 10px 0px #d4d4da;
+
+        &:hover button {
+          top: 110%;
+        }
+        &:hover div.overlay {
+          height: 100%;
           width: 100%;
-          object-position: center;
-          object-fit: cover;
+          visibility: visible;
+          & div {
+            color: white;
+            font-size: 3.5rem;
+            position: absolute;
+            width: 50%;
+            top: 50%;
+            left: 25%;
+            text-align: center;
+            &:hover {
+              color: rgb(255, 195, 17);
+            }
+          }
+        }
+
+        & img {
+          width: 100%;
+          height: auto;
+          display: block;
+          // width: 100%;
+          // object-position: center;
+          // object-fit: cover;
         }
         & button {
           position: absolute;
@@ -99,15 +124,17 @@
           font-family: "Titillium Web";
           cursor: pointer;
           background-color: rgb(255, 195, 17);
-          @media (min-width: 992px) {
+          z-index: 2;
+          @media (min-width: 768px) {
             top: 65%;
             left: 50%;
-            width: 65%;
+            width: 70%;
             height: 17%;
             font-size: 1.8rem;
             text-align: center;
           }
           @media (min-width: 1400px) {
+            transition: all 0.3s ease-in;
             left: 50%;
             top: 77.5%;
             width: 66%;
@@ -116,7 +143,41 @@
             text-align: center;
           }
         }
+        & div.overlay {
+          background-color: rgb(27, 26, 26);
+          opacity: 0.8;
+          height: 0%;
+          width: 100%;
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          transition: all 0.3s linear;
+          visibility: hidden;
+          
+        }
       }
+      // &_cards::before {
+      //   @media (min-width: 1400px) {
+      //     // content: "";
+      //     position: absolute;
+      //     top: 0;
+      //     left: 0;
+      //     width: 100%;
+      //     height: 100%;
+      //     background-color: rgba(0, 0, 0, 0.1);
+      //   }
+      // }
+      // &_cards:hover img {
+      //   @media (min-width: 1400px) {
+      //     filter: brightness(0.5);
+      //   }
+      // }
+      // &_cards:hover button {
+      //   @media (min-width: 1400px) {
+      //     display: none;
+      //   }
+      // }
     }
   }
 }
