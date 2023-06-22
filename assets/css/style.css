@@ -7,35 +7,26 @@
   box-sizing: border-box;
 }
 
-.team {
-  width: 100%;
-}
 .team_container_text {
-  padding: 5px 1%;
   margin: 1rem 1.1rem;
   font-size: 0.9em;
   font-family: "Poppins";
-  font-weight: 300;
 }
 @media (min-width: 768px) {
   .team_container_text {
-    font-size: 0.9em;
-    margin: 1.6rem 2rem 1rem 0.5rem;
+    font-size: 0.85em;
   }
 }
 @media (min-width: 1400px) {
   .team_container_text {
-    margin: 1.6rem 2rem 1rem 0.5rem;
     font-size: 1.3rem;
   }
 }
 .team_container_text-title h2 {
   font-family: "Titillium Web";
   font-size: 2.6rem;
-  font-weight: 900;
-  padding: 0;
-  margin: 0;
   line-height: 2.8rem;
+  color: black;
 }
 @media (min-width: 768px) {
   .team_container_text-title h2 {
@@ -46,22 +37,13 @@
 @media (min-width: 1400px) {
   .team_container_text-title h2 {
     font-size: 3.7rem;
-    line-height: 3.5rem;
   }
-}
-.team_container_text-title h2.black {
-  color: black;
 }
 .team_container_text-title h2.yellow {
   color: rgb(255, 195, 17);
   margin-bottom: 0.8rem;
 }
 @media (min-width: 768px) {
-  .team_container_text-title h2.yellow {
-    margin-bottom: 1rem;
-  }
-}
-@media (min-width: 1400px) {
   .team_container_text-title h2.yellow {
     margin-bottom: 1rem;
   }
@@ -77,11 +59,6 @@
     margin: 0 2.4rem;
   }
 }
-@media (min-width: 1400px) {
-  .team_container_players {
-    margin: 0 2.4rem;
-  }
-}
 .team_container_players_cards {
   width: 100%;
   margin-bottom: 4em;
@@ -91,11 +68,6 @@
 @media (min-width: 768px) {
   .team_container_players_cards {
     width: 32%;
-  }
-}
-@media (min-width: 1400px) {
-  .team_container_players_cards {
-    width: 31%;
   }
 }
 .team_container_players_cards:hover button {
@@ -114,9 +86,6 @@
   top: 50%;
   left: 25%;
   text-align: center;
-}
-.team_container_players_cards:hover div.overlay div:hover {
-  color: rgb(255, 195, 17);
 }
 .team_container_players_cards img {
   width: 100%;
@@ -150,13 +119,10 @@
 }
 @media (min-width: 1400px) {
   .team_container_players_cards button {
-    transition: all 0.3s ease-in;
     left: 50%;
     top: 77.5%;
     width: 66%;
     height: 9%;
-    font-size: 1.7rem;
-    text-align: center;
   }
 }
 .team_container_players_cards div.overlay {
